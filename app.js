@@ -21,7 +21,6 @@ handlebars.registerPartials(__dirname+ '/app_server/views/partials');
 app.set('view engine', 'hbs');
 
 app.use(logger('dev'));
-@@ -21,21 +28,22 @@
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
