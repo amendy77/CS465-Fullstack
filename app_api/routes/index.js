@@ -7,7 +7,8 @@ const tripsController = require('../controllers/trips');
 // Define routes for our trips endpoint
 router
     .route('/trips')
-    .get(tripsController.tripsList); // GET Method routes tripsList
+    .get(tripsController.tripsList) //Get Method routes tripListAdd commentMore actions
+    .post(tripsController.tripsAddTrip); //Post Method Adds a Trip
 
 // GET Method routes tripsFindByCode - requires parameter
 router
