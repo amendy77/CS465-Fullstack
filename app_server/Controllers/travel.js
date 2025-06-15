@@ -1,6 +1,5 @@
 var fs = require('fs');
 var trips = JSON.parse(fs.readFileSync('./data/trips.json', 'utf8')); 
-const fetch = require('node-fetch'); // Ensure this is correctly imported for API fetching
 const { json } = require('stream/consumers');
 
 /* Define API Endpoint and Options */
